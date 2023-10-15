@@ -6,6 +6,8 @@ RUN apt-get install -y apache2 apache2-utils
 
 RUN apt clean
 
+RUN apt install curl -y
+
 COPY index.html /var/www/html
 
 EXPOSE 80
